@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+            <div class="search">
+                <form>
+                    <select>
+                        <option>All Categories</option>
+                        <option>Laptops</option>
+                        <option>Smartphones</option>
+                        <option>Smartwatches</option>
+                    </select>
+                    <input type="text" placeholder="Search">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+
+            <div class="nav-add-cart">
+                <div class="heart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="m12.1 18.55l-.1.1l-.11-.1C7.14 14.24 4 11.39 4 8.5C4 6.5 5.5 5 7.5 5c1.54 0 3.04 1 3.57 2.36h1.86C13.46 6 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5c0 2.89-3.14 5.74-7.9 10.05M16.5 3c-1.74 0-3.41.81-4.5 2.08C10.91 3.81 9.24 3 7.5 3C4.42 3 2 5.41 2 8.5c0 3.77 3.4 6.86 8.55 11.53L12 21.35l1.45-1.32C18.6 15.36 22 12.27 22 8.5C22 5.41 19.58 3 16.5 3" />
+                    </svg>
+                    <h5>Your Wishlist</h5>
+                </div>
+                <div class="add-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                        <path fill="white"
+                            d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2" />
+                    </svg>
+                    <h5>Your Cart</h5>
+                    <p class="total-items">0</p>
+                </div>
+                <div class="account">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 16 16">
+                        <path fill="white"
+                            d="M16 7.992C16 3.58 12.416 0 8 0S0 3.58 0 7.992c0 2.43 1.104 4.62 2.832 6.09c.016.016.032.016.032.032c.144.112.288.224.448.336c.08.048.144.111.224.175A7.98 7.98 0 0 0 8.016 16a7.98 7.98 0 0 0 4.48-1.375c.08-.048.144-.111.224-.16c.144-.111.304-.223.448-.335c.016-.016.032-.016.032-.032c1.696-1.487 2.8-3.676 2.8-6.106m-8 7.001c-1.504 0-2.88-.48-4.016-1.279c.016-.128.048-.255.08-.383a4.17 4.17 0 0 1 .416-.991c.176-.304.384-.576.64-.816c.24-.24.528-.463.816-.639c.304-.176.624-.304.976-.4A4.15 4.15 0 0 1 8 10.342a4.185 4.185 0 0 1 2.928 1.166c.368.368.656.8.864 1.295c.112.288.192.592.24.911A7.03 7.03 0 0 1 8 14.993m-2.448-7.4a2.49 2.49 0 0 1-.208-1.024c0-.351.064-.703.208-1.023c.144-.32.336-.607.576-.847c.24-.24.528-.431.848-.575c.32-.144.672-.208 1.024-.208c.368 0 .704.064 1.024.208c.32.144.608.336.848.575c.24.24.432.528.576.847c.144.32.208.672.208 1.023c0 .368-.064.704-.208 1.023a2.84 2.84 0 0 1-.576.848a2.84 2.84 0 0 1-.848.575a2.715 2.715 0 0 1-2.064 0a2.84 2.84 0 0 1-.848-.575a2.526 2.526 0 0 1-.56-.848zm7.424 5.306c0-.032-.016-.048-.016-.08a5.22 5.22 0 0 0-.688-1.406a4.883 4.883 0 0 0-1.088-1.135a5.207 5.207 0 0 0-1.04-.608a2.82 2.82 0 0 0 .464-.383a4.2 4.2 0 0 0 .624-.784a3.624 3.624 0 0 0 .528-1.934a3.71 3.71 0 0 0-.288-1.47a3.799 3.799 0 0 0-.816-1.199a3.845 3.845 0 0 0-1.2-.8a3.72 3.72 0 0 0-1.472-.287a3.72 3.72 0 0 0-1.472.288a3.631 3.631 0 0 0-1.2.815a3.84 3.84 0 0 0-.8 1.199a3.71 3.71 0 0 0-.288 1.47c0 .352.048.688.144 1.007c.096.336.224.64.4.927c.16.288.384.544.624.784c.144.144.304.271.48.383a5.12 5.12 0 0 0-1.04.624c-.416.32-.784.703-1.088 1.119a4.999 4.999 0 0 0-.688 1.406c-.016.032-.016.064-.016.08C1.776 11.636.992 9.91.992 7.992C.992 4.14 4.144.991 8 .991s7.008 3.149 7.008 7.001a6.96 6.96 0 0 1-2.032 4.907" />
+                    </svg>
+                    <h5>Account</h5>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="main-header">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Hot Deals</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Laptops</a></li>
+                <li><a href="#">Smartphones</a></li>
+                <li><a href="#">Cameras</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="main-product">
+            <div class="product-cart">
+                <img src="img/lap-2.png" alt="laptop" width="100%">
+            </div>
+            <div class="product-cart">
+                <img src="img/hed-1.png" alt="laptop" width="100%">
+            </div>
+            <div class="product-cart">
+                <img src="img/cam-1.png" alt="laptop" width="100%">
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="product-head">
+                <h1>NEW PRODUCTS</h1>
+                <div>
+                    <ul>
+                        <li><a href="#" class="active">All</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="new-product">
+                <div class="new-product-cart">
+                    <img src="img/n-lap-1.png" alt="new laptop">
+                    <h4>PRODUCT 1</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-hed-1.png" alt="new laptop">
+                    <h4>PRODUCT 2</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-lap-2.png" alt="new laptop">
+                    <h4>PRODUCT 3</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-tap-1.png" alt="new laptop">
+                    <h4>PRODUCT 4</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+
+                <div class="new-product-cart">
+                    <img src="img/phone-1.png" alt="new laptop">
+                    <h4>PRODUCT 5</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-lap-4.png" alt="new laptop">
+                    <h4>PRODUCT 6</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/cam-2.png" alt="new laptop">
+                    <h4>PRODUCT 7</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-tap-1.png" alt="new laptop">
+                    <h4>PRODUCT 8</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+
+                <div class="new-product-cart">
+                    <img src="img/phone-1.png" alt="new laptop">
+                    <h4>PRODUCT 9</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-lap-4.png" alt="new laptop">
+                    <h4>PRODUCT 10</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/cam-2.png" alt="new laptop">
+                    <h4>PRODUCT 11</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-tap-1.png" alt="new laptop">
+                    <h4>PRODUCT 12</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+
+                <div class="new-product-cart">
+                    <img src="img/n-lap-1.png" alt="new laptop">
+                    <h4>PRODUCT 13</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-hed-1.png" alt="new laptop">
+                    <h4>PRODUCT 14</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-lap-2.png" alt="new laptop">
+                    <h4>PRODUCT 15</h4>
+                    <p class="price">Rs. <span>1000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+                <div class="new-product-cart">
+                    <img src="img/n-tap-1.png" alt="new laptop">
+                    <h4>PRODUCT 16</h4>
+                    <p class="price">Rs. <span>16000</span> /-</p>
+                    <button onclick="addToCart(event)" class="addcart-btn">Add Cart</button>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="page-last">
+            <p>Sign Up for the <strong>NEWS LETTER</strong></p>
+            <form>
+                <input type="email" placeholder="Enter Your Email">
+                <button><i class="fa fa-envelope" style="font-size:15px"></i> Send Message</button>
+            </form>
+            <div class="icons">
+                <div class="icon"><i class="fa fa-facebook-f" style="font-size:30px"></i></div>
+                <div class="icon"><i class="fa fa-whatsapp" style="font-size:30px"></i></div>
+                <div class="icon"><i class="fa fa-instagram" style="font-size:30px"></i></div>
+                <div class="icon"><i class="fa fa-twitter" style="font-size:30px"></i></div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="foot-1">
+                <h2 style="margin: 10px;color: white;">ABOUT US</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipis. Quas culpa, corporis repudiandae voluptatem delectus
+                    similique!</p>
+                <p><i class="fa fa-map-marker" style="font-size:20px;margin-right: 8px;"></i> 5, South Street, Mount
+                    Road</p>
+                <p><i class="fa fa-phone" style="font-size:20px;margin-right: 8px;"></i> +91 8475894847</p>
+                <p><i class="fa fa-envelope" style="font-size:20px;margin-right: 8px;"></i> email@gmail.com</p>
+            </div>
+            <div class="foot-2">
+                <h2 style="margin: 10px;color: white;">CATEGORIES</h2>
+                <p>Hot deals</p>
+                <p>Laptops</p>
+                <p>Smartphones</p>
+                <p>Cameras</p>
+                <p>Accessories</p>
+            </div>
+            <div class="foot-3">
+                <h2 style="margin: 10px;color: white;">INFORMATION</h2>
+                <p>About Us</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+                <p>Orders and Returns</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="foot-4">
+                <h2 style="margin: 10px;color: white;">SERVICE</h2>
+                <p>My Account</p>
+                <p>View Cart</p>
+                <p>Wishlist</p>
+                <p>Track My Order</p>
+                <p>Help</p>
+            </div>
+
+        </footer>
+
+        <h4 class="copy-right">Copyright ©2024 All rights reserved</h4>
+
+    </main>
+
+    <div class="side-cart">
+        <button class="cancel-btn">
+            <i class="fa fa-close" style="font-size:24px"></i>
+        </button>
+
+        <h2>Cart Items</h2>
+
+        <ul id="cart-items">
+            
+           
+        </ul>
+
+        <p class="cart-total">Total: Rs. 0/-</p>
+    </div>
+
+    <script src="js.js"></script>
+
+</body>
+
+</html>
